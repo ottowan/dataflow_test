@@ -40,7 +40,7 @@ func CalculateBill(usage float64) float64 {
 
 func BillOver100(bill float64) float64 {
 
-	if bill > 100 {
+	if bill > 100 && bill > 0 {
 		bill = bill * 0.9
 	}
 	return bill
